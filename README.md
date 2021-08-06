@@ -1,4 +1,4 @@
-# alfred-for-fe
+# alfred-fe
 
 - 英文字符转大写
 - 时间转换
