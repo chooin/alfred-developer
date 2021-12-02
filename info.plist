@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.chooin.alfred</string>
+	<string>com.chooin.alfred-developer</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -146,7 +146,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>My Workflows</string>
+	<string>Developer</string>
 	<key>objects</key>
 	<array>
 		<dict>

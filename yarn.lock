@@ -156,7 +156,7 @@ alfred-notifier@^0.2.3:
     read-pkg "^2.0.0"
     semver "^5.3.0"
 
-alfy@^0.12.1:
+alfy@*:
   version "0.12.1"
   resolved "https://registry.npmjs.org/alfy/-/alfy-0.12.1.tgz#eafed004c6f0841555a502e09732e645e389f339"
   integrity sha512-yUgCh8yFgs9s4lCrv5nP2BZE5PTDuSJRlnKGdVKb/11BLn7l7jpOFrIAvnRhQpqyd7SttstWF4JusQNvwsGAoA==
