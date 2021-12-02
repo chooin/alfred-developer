@@ -1,0 +1,31 @@
+{
+  "name": "alfred-developer",
+  "version": "1.0.0",
+  "description": "Developer's alfred workflow",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "author": {
+    "name": "Devin",
+    "email": "chooin@126.com",
+    "url": ""
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "alfy": "*",
+    "chroma-js": "^2.1.2",
+    "dayjs": "^1.10.7",
+    "internal-ip": "^7.0.0",
+    "md5": "^2.3.0",
+    "public-ip": "^4.0.4",
+    "query-string": "^7.0.1",
+    "sha1": "^1.1.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^2.1.3"
+  }
+}
