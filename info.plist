@@ -112,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>95134AA7-7417-4B4A-B531-3C7E081E0530</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>834CB949-12BD-4C61-8C07-A291D679AFF8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>BA1A0F28-FEBF-4CB8-B439-6BAFA1F91406</key>
 		<array>
 			<dict>
@@ -643,6 +656,55 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>regex</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node regex.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>95134AA7-7417-4B4A-B531-3C7E081E0530</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -710,6 +772,13 @@
 			<integer>790</integer>
 			<key>ypos</key>
 			<integer>470</integer>
+		</dict>
+		<key>95134AA7-7417-4B4A-B531-3C7E081E0530</key>
+		<dict>
+			<key>xpos</key>
+			<integer>375</integer>
+			<key>ypos</key>
+			<integer>1100</integer>
 		</dict>
 		<key>BA1A0F28-FEBF-4CB8-B439-6BAFA1F91406</key>
 		<dict>

@@ -1,7 +1,7 @@
 {
   "name": "alfred-developer",
-  "version": "1.0.1",
-  "description": "Developer's alfred workflow",
+  "version": "1.0.2",
+  "description": "Developer's Alfred workflow",
   "main": "index.js",
   "scripts": {
     "postinstall": "alfy-init",

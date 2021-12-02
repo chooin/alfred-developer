@@ -8,4 +8,4 @@ yarn global add alfred-developer
 
 ### Usage
 
-In Alfred, type: `color` `day` `decode` `encode` `qrcode` `string` `uuid`
+In Alfred, type: `color` `day` `decode` `encode` `qrcode` `string` `uuid` `regex`
