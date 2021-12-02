@@ -12,7 +12,7 @@
     "email": "chooin@126.com",
     "url": ""
   },
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "alfy": "*",
