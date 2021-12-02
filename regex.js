@@ -377,11 +377,13 @@ const items = [
 		rule: /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
 	}
 ]
-	.map((item) => ({
-		title: item.title,
-		subtitle: item.rule.toString(),
-		arg: item.rule.toString(),
+	.map(({ title, rule }) => ({
+		title,
+		subtitle: rule.toString(),
+		arg: rule.toString(),
 	}))
-	.filter(item => item.title.toLowerCase().startsWith(alfy.input.toLowerCase()));
+	.filter(({ title }) => {
+		return title.toLowerCase().trim().startsWith(alfy.input.toLowerCase().trim());
+	});
 
 alfy.output(items);
