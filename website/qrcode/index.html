@@ -15,9 +15,11 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       new QRCode(document.querySelector("#qrcode"), {
-        text: params.get("text") ?? "text",
-        width: params.get("size") ?? 400,
-        height: params.get("size") ?? 400,
+        text: params.has("text")
+          ? decodeURIComponent(params.get("text"))
+          : "text",
+        width: params.has("size") ? parseInt(params.get("size"), 10) : 400,
+        height: params.has("size") ? parseInt(params.get("size"), 10) : 400,
       });
     </script>
   </body>
