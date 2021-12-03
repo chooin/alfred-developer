@@ -6,7 +6,7 @@ alfy.output(
     title: `${size}: ${alfy.input}`,
     subtitle: "Open in browser",
     arg: queryString.stringifyUrl({
-      url: "https://api.oick.cn/qrcode/api.php",
+      url: "https://alfred-developer-chooin.vercel.app",
       query: {
         text: encodeURIComponent(alfy.input),
         size,
