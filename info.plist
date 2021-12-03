@@ -586,7 +586,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node qrcode.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/qrcode/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -720,9 +720,9 @@
 		<key>09E698D9-A745-4616-AC5C-8213F47A4FEA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>155</integer>
 		</dict>
 		<key>0B043897-A348-45FA-8E35-BEE5278498D9</key>
 		<dict>

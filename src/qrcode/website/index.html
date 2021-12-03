@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Create Qrcode</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div id="qrcode"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      new QRCode(document.querySelector("#qrcode"), {
+        text: params.get("text") ?? "text",
+        width: params.get("size") ?? 400,
+        height: params.get("size") ?? 400,
+      });
+    </script>
+  </body>
+</html>
