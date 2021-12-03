@@ -1,4 +1,5 @@
 import alfy from "alfy";
+import pinyin, { STYLE_NORMAL } from "pinyin";
 
 const items = [
   {
@@ -415,11 +416,14 @@ const items = [
     subtitle: rule.toString(),
     arg: rule.toString(),
   }))
-  .filter(({ title }) => {
-    return title
-      .toLowerCase()
-      .trim()
-      .startsWith(alfy.input.toLowerCase().trim());
+  .filter((item) => {
+    const input = pinyin(alfy.input.toLowerCase().trim(), {
+      style: pinyin.STYLE_NORMAL,
+    }).join("");
+    const title = pinyin(item.title.toLowerCase().trim(), {
+      style: pinyin.STYLE_NORMAL,
+    }).join("");
+    return title.indexOf(input) > -1;
   });
 
 alfy.output(items);

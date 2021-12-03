@@ -190,7 +190,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node uuid.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/uuid/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -239,7 +239,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node day.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/day/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -288,7 +288,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node encode.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/encode/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -371,7 +371,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node decode.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/decode/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -420,7 +420,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node icp.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/icp/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -469,7 +469,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node ip.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/ip/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -518,7 +518,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node string.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/string/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -635,7 +635,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node color.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/color/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -684,7 +684,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node regex.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/regex/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
