@@ -10,4 +10,4 @@ yarn global add alfred-developer
 
 In Alfred, type: `color` `day` `decode` `encode` `qrcode` `string` `uuid` `regex`
 
-<img src="https://github.com/chooin/alfred-developer/tree/master/img/awesome.png">
+<img src="https://github.com/Chooin/alfred-developer/tree/master/img/awesome.png" width="880" height="auto" />
