@@ -14,12 +14,18 @@
     <div id="qrcode"></div>
     <script>
       const params = new URLSearchParams(window.location.search);
+      const text = params.has("text")
+        ? decodeURIComponent(params.get("text"))
+        : "text";
+      const width = params.has("size") ? parseInt(params.get("size"), 10) : 400;
+      const height = params.has("size")
+        ? parseInt(params.get("size"), 10)
+        : 400;
+
       new QRCode(document.querySelector("#qrcode"), {
-        text: params.has("text")
-          ? decodeURIComponent(params.get("text"))
-          : "text",
-        width: params.has("size") ? parseInt(params.get("size"), 10) : 400,
-        height: params.has("size") ? parseInt(params.get("size"), 10) : 400,
+        text,
+        width,
+        height,
       });
     </script>
   </body>
