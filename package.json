@@ -1,10 +1,8 @@
 {
   "name": "alfred-developer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Developer's Alfred workflow",
   "scripts": {
-    "deploy": "npm-run-all deploy:*",
-    "deploy:qrcode": "npx now deploy src/qrcode/website",
     "prepare": "husky install",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
