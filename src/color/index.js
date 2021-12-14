@@ -17,10 +17,7 @@ if (chroma.valid(alfy.input)) {
       title: chroma(alfy.input).css(),
       arg: chroma(alfy.input).css(),
     },
-  ].map((item) => ({
-    ...item,
-    subtitle: `Copy to clipboard`,
-  }));
+  ];
 }
 
 alfy.output(items);

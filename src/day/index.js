@@ -12,41 +12,46 @@ const parse = alfy.input ? dayjs(alfy.input) : dayjs();
 if (parse.isValid()) {
   items = [
     {
-      title: `Asia/Shanghai: ${parse.format("YYYY-MM-DD HH:mm:ss")}`,
+      title: parse.format("YYYY-MM-DD HH:mm:ss"),
+      subtitle: "Asia/Shanghai",
       arg: parse.format("YYYY-MM-DD HH:mm:ss"),
     },
     {
-      title: `UTC: ${parse.add(-8, "hour").format("YYYY-MM-DD HH:mm:ss")}`,
+      title: parse.add(-8, "hour").format("YYYY-MM-DD HH:mm:ss"),
+      subtitle: "UTC",
       arg: parse.add(-8, "hour").format("YYYY-MM-DD HH:mm:ss"),
     },
     {
-      title: `ISO: ${parse.toISOString()}`,
+      title: parse.toISOString(),
+      subtitle: "ISO",
       arg: parse.toISOString(),
     },
     {
-      title: `Unix(ms): ${parse.valueOf()}`,
+      title: parse.valueOf(),
+      subtitle: "Unix(ms)",
       arg: parse.valueOf(),
     },
     {
-      title: `Unix(s): ${parse.unix()}`,
-      arg: parse.valueOf(),
+      title: parse.unix(),
+      subtitle: "Unix(s)",
+      arg: parse.unix(),
     },
     {
-      title: `Year: ${parse.format("YYYY")}`,
+      title: parse.format("YYYY"),
+      subtitle: "Year",
       arg: parse.format("YYYY"),
     },
     {
-      title: `Month: ${parse.format("MM")}`,
+      title: parse.format("MM"),
+      subtitle: "Month",
       arg: parse.format("MM"),
     },
     {
-      title: `Day: ${parse.format("DD")}`,
+      title: parse.format("DD"),
+      subtitle: "Day",
       arg: parse.format("DD"),
     },
-  ].map((item) => ({
-    ...item,
-    subtitle: `Copy to clipboard`,
-  }));
+  ];
 }
 
 alfy.output(items);

@@ -7,13 +7,13 @@ const internalIP = await internalIpV4();
 
 alfy.output([
   {
-    title: `Public IP: ${publicIP}`,
-    subtitle: `Copy to clipboard`,
+    title: publicIP,
+    subtitle: "Public IP",
     arg: publicIP,
   },
   {
-    title: `Internal IP: ${internalIP}`,
-    subtitle: `Copy to clipboard`,
+    title: internalIP,
+    subtitle: "Internal IP",
     arg: internalIP,
   },
 ]);
