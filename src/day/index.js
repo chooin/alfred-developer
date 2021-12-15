@@ -13,7 +13,7 @@ if (parse.isValid()) {
   items = [
     {
       title: parse.format("YYYY-MM-DD HH:mm:ss"),
-      subtitle: "Asia/Shanghai",
+      subtitle: "UTC+0800",
       arg: parse.format("YYYY-MM-DD HH:mm:ss"),
     },
     {
@@ -23,7 +23,7 @@ if (parse.isValid()) {
     },
     {
       title: parse.toISOString(),
-      subtitle: "ISO",
+      subtitle: "ISO-8601",
       arg: parse.toISOString(),
     },
     {
@@ -35,21 +35,6 @@ if (parse.isValid()) {
       title: parse.unix(),
       subtitle: "Unix(s)",
       arg: parse.unix(),
-    },
-    {
-      title: parse.format("YYYY"),
-      subtitle: "Year",
-      arg: parse.format("YYYY"),
-    },
-    {
-      title: parse.format("MM"),
-      subtitle: "Month",
-      arg: parse.format("MM"),
-    },
-    {
-      title: parse.format("DD"),
-      subtitle: "Day",
-      arg: parse.format("DD"),
     },
   ];
 }
