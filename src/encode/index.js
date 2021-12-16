@@ -4,7 +4,7 @@ import { Base64 } from "js-base64";
 alfy.output([
   {
     title: encodeURIComponent(alfy.input),
-    subtitle: "URI",
+    subtitle: "URL encode",
     arg: encodeURIComponent(alfy.input),
   },
   {
