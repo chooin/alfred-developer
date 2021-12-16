@@ -1,7 +1,6 @@
 import alfy from "alfy";
 import md5 from "md5";
 import sha1 from "sha1";
-import { Base64 } from "js-base64";
 
 let items = [];
 
@@ -26,16 +25,6 @@ if (alfy.input) {
       title: sha1(alfy.input),
       subtitle: "SHA-1",
       arg: sha1(alfy.input),
-    },
-    {
-      title: Base64.encode(alfy.input),
-      subtitle: "Base64 encode",
-      arg: Base64.decode(alfy.input),
-    },
-    {
-      title: Base64.decode(alfy.input),
-      subtitle: "Base64 decode",
-      arg: Base64.decode(alfy.input),
     },
   ];
   if (alfy.input.length === 1) {
