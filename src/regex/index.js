@@ -1,5 +1,5 @@
 import alfy from "alfy";
-import pinyin, { STYLE_NORMAL } from "pinyin";
+import pinyin from "pinyin";
 
 const items = [
   {
@@ -158,7 +158,7 @@ const items = [
   {
     title: "base64 格式",
     rule: /^\s*data:(?:[a-z]+\/[a-z0-9-+.]+(?:;[a-z-]+=[a-z0-9-]+)?)?(?:;base64)?,([a-z0-9!$&',()*+;=\-._~:@/?%\s]*?)\s*$/i,
-    examples: ["data:image/gif;base64,xxxx=="],
+    examples: ["data:image/gif;base64,word=="],
   },
   {
     title: "数字/货币金额（支持负数、千分位分隔符）",
