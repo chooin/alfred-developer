@@ -1,6 +1,6 @@
 {
   "name": "alfred-developer",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Developer's Alfred workflow",
   "scripts": {
     "prepare": "husky install",
@@ -17,10 +17,10 @@
   "dependencies": {
     "alfy": "*",
     "chroma-js": "^2.1.2",
-    "dayjs": "^1.10.7",
     "internal-ip": "^7.0.0",
     "js-base64": "^3.7.2",
     "md5": "^2.3.0",
+    "moment": "^2.29.1",
     "pinyin": "^2.10.2",
     "public-ip": "^4.0.4",
     "query-string": "^7.0.1",

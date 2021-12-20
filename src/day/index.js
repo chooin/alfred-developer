@@ -1,5 +1,5 @@
 import alfy from "alfy";
-import dayjs from "dayjs";
+import moment from "moment";
 
 let items = [
   {
@@ -7,7 +7,7 @@ let items = [
   },
 ];
 
-const parse = alfy.input ? dayjs(alfy.input) : dayjs();
+const parse = alfy.input ? moment(alfy.input) : moment();
 
 if (parse.isValid()) {
   items = [
@@ -17,9 +17,9 @@ if (parse.isValid()) {
       arg: parse.format("YYYY-MM-DD HH:mm:ss"),
     },
     {
-      title: parse.add(-8, "hour").format("YYYY-MM-DD HH:mm:ss"),
+      title: parse.utc().format("YYYY-MM-DD HH:mm:ss"),
       subtitle: "UTC",
-      arg: parse.add(-8, "hour").format("YYYY-MM-DD HH:mm:ss"),
+      arg: parse.utc().format("YYYY-MM-DD HH:mm:ss"),
     },
     {
       title: parse.toISOString(),
