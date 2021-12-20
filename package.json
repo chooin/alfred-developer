@@ -1,6 +1,6 @@
 {
   "name": "alfred-developer",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Developer's Alfred workflow",
   "scripts": {
     "prepare": "husky install",

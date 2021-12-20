@@ -26,12 +26,17 @@ if (alfy.input) {
       subtitle: "SHA-1",
       arg: sha1(alfy.input),
     },
+    {
+      title: alfy.input.length,
+      subtitle: "String length",
+      arg: alfy.input.length,
+    },
   ];
   if (alfy.input.length === 1) {
     items = [
       {
         title: alfy.input.charCodeAt(0),
-        subtitle: "Char code",
+        subtitle: "ASCII",
         arg: alfy.input.charCodeAt(0),
       },
       ...items,

@@ -7,9 +7,28 @@ let items = [
   },
 ];
 
-const parse = alfy.input ? moment(alfy.input) : moment();
+let parse;
 
-if (parse.isValid()) {
+if (alfy.input) {
+  if (/^[\d]+$/.test(alfy.input)) {
+    if (alfy.input.length === 10) {
+      if (moment(new Date(Number(alfy.input) * 1000)).isValid()) {
+        parse = moment(new Date(Number(alfy.input) * 1000));
+      }
+    }
+    if (alfy.input.length === 13) {
+      if (moment(new Date(Number(alfy.input))).isValid()) {
+        parse = moment(new Date(Number(alfy.input)));
+      }
+    }
+  } else {
+    parse = moment(new Date(alfy.input));
+  }
+} else {
+  parse = moment();
+}
+
+if (parse?.isValid()) {
   items = [
     {
       title: parse.format("YYYY-MM-DD HH:mm:ss"),
