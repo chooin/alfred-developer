@@ -11,12 +11,12 @@ let items = [
 
 if (Base64.isValid(alfy.input)) {
   items = [
-    ...items,
     {
       title: Base64.decode(alfy.input),
       subtitle: "Base64",
       arg: Base64.decode(alfy.input),
     },
+    ...items,
   ];
 }
 
