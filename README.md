@@ -33,3 +33,7 @@ In Alfred, type: `color` `day` `encode` `decode` `qrcode` `string` `uuid` `regex
 #### regex
 
 <img src="img/regex.png" width="400" height="auto" />
+
+#### qrcode
+
+<img src="img/qrcode.png" width="400" height="auto" />
