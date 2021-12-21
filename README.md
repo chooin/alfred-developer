@@ -1,4 +1,4 @@
-# Alfred workflow for developer
+# Alfred workflow for developers
 
 ### Install
 
