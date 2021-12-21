@@ -3,8 +3,8 @@ import queryString from "query-string";
 
 alfy.output(
   [600, 800, 1200].map((size) => ({
-    title: `${size}: ${alfy.input}`,
-    subtitle: "Open in browser",
+    title: alfy.input,
+    subtitle: `${size} px`,
     arg: queryString.stringifyUrl({
       url: "https://alfred-developer-chooin.vercel.app/qrcode",
       query: {
