@@ -1,19 +1,25 @@
-import alfy from "alfy";
-import { v4 } from "public-ip";
-import { internalIpV4 } from "internal-ip";
+import alfy from 'alfy';
+import ipify from 'ipify';
+import { internalIpV4 } from 'internal-ip';
 
-const publicIP = await v4();
+const ipv4 = await ipify({ useIPv6: false });
+const ipv6 = await ipify();
 const internalIP = await internalIpV4();
 
 alfy.output([
   {
-    title: publicIP,
-    subtitle: "Public IP",
-    arg: publicIP,
+    title: ipv4,
+    subtitle: 'Public IP',
+    arg: ipv4,
   },
   {
     title: internalIP,
-    subtitle: "Internal IP",
+    subtitle: 'Internal IP',
     arg: internalIP,
+  },
+  {
+    title: ipv6,
+    subtitle: 'Public IP V6',
+    arg: ipv6,
   },
 ]);
