@@ -1,9 +1,9 @@
-import alfy from "alfy";
-import moment from "moment";
+import alfy from 'alfy';
+import moment from 'moment';
 
 let items = [
   {
-    title: "Invalid Date",
+    title: 'Invalid Date',
   },
 ];
 
@@ -31,28 +31,28 @@ if (alfy.input) {
 if (parse?.isValid()) {
   items = [
     {
-      title: parse.format("YYYY-MM-DD HH:mm:ss"),
-      subtitle: "UTC+0800",
-      arg: parse.format("YYYY-MM-DD HH:mm:ss"),
+      title: parse.format('YYYY-MM-DD HH:mm:ss'),
+      subtitle: 'UTC+0800',
+      arg: parse.format('YYYY-MM-DD HH:mm:ss'),
     },
     {
-      title: parse.utc().format("YYYY-MM-DD HH:mm:ss"),
-      subtitle: "UTC",
-      arg: parse.utc().format("YYYY-MM-DD HH:mm:ss"),
+      title: parse.utc().format('YYYY-MM-DD HH:mm:ss'),
+      subtitle: 'UTC',
+      arg: parse.utc().format('YYYY-MM-DD HH:mm:ss'),
     },
     {
       title: parse.toISOString(),
-      subtitle: "ISO-8601",
+      subtitle: 'ISO-8601',
       arg: parse.toISOString(),
     },
     {
       title: parse.valueOf(),
-      subtitle: "Unix(ms)",
+      subtitle: 'Unix(ms)',
       arg: parse.valueOf(),
     },
     {
       title: parse.unix(),
-      subtitle: "Unix(s)",
+      subtitle: 'Unix(s)',
       arg: parse.unix(),
     },
   ];

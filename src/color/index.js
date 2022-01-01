@@ -1,9 +1,9 @@
-import alfy from "alfy";
-import chroma from "chroma-js";
+import alfy from 'alfy';
+import chroma from 'chroma-js';
 
 let items = [
   {
-    title: "Invalid Color",
+    title: 'Invalid Color',
   },
 ];
 
